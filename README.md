@@ -1,3 +1,20 @@
+## Updated Guide on Setting up Arelle (Grant Thornton Malta)
+
+1. Install Arelle from `\\gtm-az-apps.gt-malta.local\clientapps$\Repository\Arelle`.
+2. Open Arelle. Go to `Help` > `Check for Updates`, and install the newest version of Arelle.
+3. Go to `C:\Program Files\Arelle\plugins`. Delete the `iXBRLViewerPlugin` folder from within.
+4. Download [https://github.com/Workiva/ixbrl-viewer/releases/download/1.4.22/ixbrlviewer.js](https://github.com/Workiva/ixbrl-viewer/releases/download/1.4.22/ixbrlviewer.js).
+5. Go to `Help` > `Manage Plug-ins`.
+6. Ensure `Validate ESMA ESEF` is already enabled.
+7. Click on `Validate ESMA ESEF` > `Select` > Click on `ixbrl-viewer` _(Inline XBRL Document Set)_.
+8. Go to `Select` _(Don't click on any plugin)_ > Double-click on `ixbrl-viewer` _(0.1)_.
+9. Click `Enable all` and then `Close` (Arelle will automatically restart).
+10. Go to `Tools` > `Validation` > `Select disclosure system` > **ESMA RTS on ESEF-2023**. **This needs to be selected every time Arelle is opened.**.
+11. Go to `Tools` > `iXBRL Viewer` _(if this doesn't appear, close Arelle and re-open)_ > `Settings`.
+12. Ensure **Launch on Load** and **Copy Script** are selected.
+13. Add `C:\Program Files\Arelle\plugin\iXBRLViewerPlugin\viewer\dist\ixbrlviewer.js` in Script URL input box, then click `OK`.
+14. When opening zip file (`File` > `Open File`), ensure that you open the _"Inline Instance"_.
+
 # Arelle iXBRL Viewer
 
 ![ixbrl-viewer](https://raw.githubusercontent.com/Arelle/ixbrl-viewer/master/examples/ixbrl-viewer-demo.gif)
